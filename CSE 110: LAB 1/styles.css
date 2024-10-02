@@ -1,16 +1,26 @@
+* { /*for all elements*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;   /* Removes borders from all elements */
+    outline: none;  /* Removes outlines from all elements */
+    font-size: 28px;
+}
+
+#top-logo {
+  max-width: 400px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: white;
 }
 
 li {
   float: left;
-  border-right: 1px solid #bbb;
-  border-left: 1px solid #bbb;
-  
 }
 
 li a {
@@ -22,18 +32,83 @@ li a {
 }
 
 li a:hover {
-  background-color: rgb(195, 190, 190);
+  color: white;
+  background-color: #182b49;
 }
-  
-  #Section1 {
-    background-color: rgb(245, 240, 230);
-    display: inline-block;
-    width: 100%;
-  }
 
-  #Section2 {
-    color: white;
-    display: inline-block;
-    width: 100%;
-    background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
-  }
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden; /* hidden ensures that the overflows are not shown, chipped off */
+}
+
+  
+#Section1 {
+  background-color: rgb(245, 240, 230);
+  padding: 15px;
+  scroll-margin-top: 60px;
+  display: inline-block;
+  width: 100%;
+}
+
+#Section2 {
+  color: white;
+  scroll-margin-top: 60px;
+  display: inline-block;
+  padding: 15px;
+  width: 100%;
+  background-image: url("https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg");
+}
+
+.wrapper {
+  display: grid;
+  padding: 0;
+  margin: 0;
+  scroll-margin-top: 60px;
+  padding: 15px;
+  background-color: rgb(245, 240, 230);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px; /* gap between the block */
+  grid-auto-rows: auto 500px; /* Set a fixed row height for uniformity */
+}
+
+.section-header {
+  padding: 0;
+  margin: 0;
+  grid-column: 1 / -1; /* Span the header across all 3 columns */
+  background-color: rgb(245, 240, 230);
+  margin-bottom: 0; /* Space between the header and the boxes */
+}
+
+.one {
+  grid-column: 1;
+  grid-row: span 2;
+  padding-inline: 5px;
+  background-color: #182b49;
+  color: white;
+}
+
+.two {
+  grid-column: 2;
+  grid-row: span 2;
+  padding-inline: 5px;
+  background-color: #182b49;
+  color: white;
+}
+
+.three {
+  grid-column: 3;
+  grid-row: span 2;
+  padding-inline: 5px;
+  background-color: #182b49;
+  color: white;
+}
+
+.four {
+  grid-column: 4;
+  grid-row: span 2;
+  padding-inline: 5px;
+  background-color: #182b49;
+  color: white;
+}
+
