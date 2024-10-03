@@ -52,7 +52,7 @@ li a:hover {
 #Section1 {
   background-color: rgb(245, 240, 230);
   padding: 15px;
-  scroll-margin-top: 60px;
+  scroll-margin-top: 85px;
   display: inline-block;
   width: 100%;
 }
@@ -63,7 +63,7 @@ li a:hover {
 
 #Section2 {
   color: white;
-  scroll-margin-top: 60px;
+  scroll-margin-top: 85px;
   display: inline-block;
   padding: 15px;
   width: 100%;
@@ -78,7 +78,7 @@ li a:hover {
   display: grid;
   padding: 0;
   margin: 0;
-  scroll-margin-top: 60px;
+  scroll-margin-top: 85px;
   padding: 15px;
   background-color: rgb(245, 240, 230);
   grid-template-columns: repeat(4, 1fr);
